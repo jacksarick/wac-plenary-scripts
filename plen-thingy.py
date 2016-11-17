@@ -1,13 +1,9 @@
 # Row format
-# NAME, SCHOOL, choice 1, choice 2, choice 3, choice 4
+# NAME, SCHOOL, choice 1, choice 2, ... choice n
+from collections import Counter
 
-estimate = [Counter(), Counter(), Counter(), Counter()]
-
-with open("File\n> ") as everyone
+CHOICES = 4
+PLENARIES = 6
+with open("File\n> ") as everyone:
 	for person in everyone:
-		estimate[0].update(person[3])
-		estimate[1].update(person[4])
-		estimate[2].update(person[5])
-		estimate[3].update(person[6])
-
-print estimate
+		person.split()
